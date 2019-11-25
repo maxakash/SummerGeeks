@@ -1,0 +1,7 @@
+{
+  "name": "SummerGeeks",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

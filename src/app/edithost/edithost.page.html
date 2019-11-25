@@ -1,0 +1,39 @@
+<ion-header style="background:#4c8dff;color:white">
+  <ion-toolbar color="#83007b">
+      <button  (click)="DismissClick()" style="background:transparent;margin-left:10px" float-left >
+          <ion-icon name="arrow-back" style="zoom:2.0;" color="light"></ion-icon>
+  
+  
+      </button>
+    <ion-title>Edit Host Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    
+        <div>
+            <h5 class="host">Host Details</h5>
+          </div>
+        <ion-item class="box"> 
+            <ion-label  position="stacked">Name</ion-label>
+            <ion-input [(ngModel)]="hostdetail.name"></ion-input>
+          </ion-item>
+          <ion-item class="box"> 
+              <ion-label position="stacked">Phone</ion-label>
+              <ion-input [(ngModel)]="hostdetail.phone" inputmode="tel" maxlength="10"></ion-input>
+            </ion-item>
+            <ion-item class="box"> 
+                <ion-label  position="stacked">Email</ion-label>
+                <ion-input [(ngModel)]="hostdetail.email" inputmode="email"></ion-input>
+              </ion-item>
+              <ion-item class="box"> 
+                  <ion-label  position="stacked">Address</ion-label>
+                  <ion-input [(ngModel)]="hostdetail.address"></ion-input>
+                </ion-item>
+              <br>
+
+                <ion-button class="button"  (click)="savehost()"shape="rectangle" fill="outline">Save Host</ion-button>      
+      
+
+</ion-content>

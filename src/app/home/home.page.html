@@ -1,0 +1,72 @@
+<ion-header style="background:#4c8dff">
+  <ion-toolbar color="#83007b">
+    <ion-title style="color:white;background:transparent">
+      Summer Geeks
+      <button  (click)="presentRadioPopover($event)" style="background:transparent;margin-right:-10px" float-right >
+          <ion-icon name="more" style="zoom:2.0;" color="light"></ion-icon>
+  
+  
+      </button>
+     
+    </ion-title>
+    
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="hostadded">
+   <div>
+     <h5 class="visitor">Visitor's Details</h5>
+   </div>
+
+  
+  <ion-item class="box"> 
+    <ion-label  position="stacked">Name</ion-label>
+    <ion-input [(ngModel)]="visitordetail.name"></ion-input>
+  </ion-item>
+  <ion-item class="box"> 
+      <ion-label position="stacked">Phone</ion-label>
+      <ion-input [(ngModel)]="visitordetail.phone" inputmode="tel" maxlength="10"></ion-input>
+    </ion-item>
+    <ion-item class="box"> 
+        <ion-label  position="stacked">Email</ion-label>
+        <ion-input [(ngModel)]="visitordetail.email" inputmode="email"></ion-input>
+      </ion-item>
+      <br>
+
+
+      <ion-button class="button1" (click)="addvisitor()"shape="rectangle" fill="outline">Visitor CheckIn</ion-button>      
+
+    </div>
+
+    
+
+     
+
+        <div *ngIf="!hostadded">
+            <div>
+                <h5 class="host">Host Details</h5>
+              </div>
+            <ion-item class="box"> 
+                <ion-label  position="stacked">Name</ion-label>
+                <ion-input [(ngModel)]="hostdetail.name"></ion-input>
+              </ion-item>
+              <ion-item class="box"> 
+                  <ion-label position="stacked">Phone</ion-label>
+                  <ion-input [(ngModel)]="hostdetail.phone" inputmode="tel" maxlength="10"></ion-input>
+                </ion-item>
+                <ion-item class="box"> 
+                    <ion-label  position="stacked">Email</ion-label>
+                    <ion-input [(ngModel)]="hostdetail.email" inputmode="email"></ion-input>
+                  </ion-item>
+                  <ion-item class="box"> 
+                      <ion-label  position="stacked">Address</ion-label>
+                      <ion-input [(ngModel)]="hostdetail.address"></ion-input>
+                    </ion-item>
+                  <br>
+
+                    <ion-button class="button"  (click)="addhost()"shape="rectangle" fill="outline">Add Host</ion-button>      
+          </div>
+    
+</ion-content>
