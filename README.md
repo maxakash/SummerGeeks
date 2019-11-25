@@ -3,7 +3,7 @@ The project is created using Ionic Framework . I choose this platform becuase wi
 
 The data is stored is Firebase Firestore.
 
-I have used SMTP to send emails to the host and visitor and a SMS api to send SMS to the host.
+I have used SMTP to send emails to the host and visitor and a SMS api to send SMS to the host. Please check spam folder for emails.
 
 Here is the link to dowload the Android Application
 
