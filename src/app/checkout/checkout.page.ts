@@ -34,7 +34,7 @@ export class CheckoutPage {
 
     console.log(this.visitorphone);
   
-    this.nativeStorage.getItem(this.visitorphone)
+    this.nativeStorage.getItem("hostdetails")
       .then(
         data => {
           console.log(data)
